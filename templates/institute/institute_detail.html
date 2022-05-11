@@ -1,0 +1,14 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+    <a href="{% url 'umk:institute_edit' object.pk %}">Редактировать данные о институте</a>
+    <p><a href="{% url 'umk:institute_delete' object.pk %}">Удалить институт</a></p>
+    <a href="">{{ object.name }}</a>
+    <p>{{ object.info }}</p>
+
+
+
+{% endblock %}
+

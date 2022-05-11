@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}Направления подготовки{% endblock %}
+
+{% block content %}
+
+<a href="{% url 'umk:direction_new' %}">Добавить направление подготовки</a><br>
+<a href="{% url 'umk:generate' %}">генерировать</a><br>
+{% for direction in object_list %}
+
+
+
+<p>{{ direction.name }}</p>
+<p>{{ direction.code }}</p>
+<a href="{% url 'umk:document' direction.id %}"><button > ФГОС</button></a>
+
+
+<p>{{ direction.qualification }}</p>
+
+<p>{{ direction.standart_period}}</p>
+
+{% endfor %}
+
+{% endblock %}

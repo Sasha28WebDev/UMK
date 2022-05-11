@@ -1,0 +1,6 @@
+.env
+umk/__pycahce__/
+Project/__pycahce__/
+migrations
+db.sqlite3
+*.pyc

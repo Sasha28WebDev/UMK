@@ -1,0 +1,15 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+<a href="{% url 'umk:institute_new' %}">Добавить институт</a><br>
+{% for institute in object_list %}
+
+    <a href="{% url 'umk:institute_detail' institute.id %}">{{ institute.name }}</a><br>
+
+
+
+{% endfor %}
+
+{% endblock %}
+
