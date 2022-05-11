@@ -8,15 +8,15 @@
 
 ### Screenshots
 
-![](./img1.png)
 ![](./img2.png)
+![](./img1.png)
 ![](./img3.png)
 
-### Разработа при помощи
+### Стек разработки
 
 - Python + Django Framework
 - Bootstrap Framework
-- MySql database
+- MySQL database
 
 ### Что я изучил
 
